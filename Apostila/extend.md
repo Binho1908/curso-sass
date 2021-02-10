@@ -16,14 +16,14 @@ Criamos a classe .msg que receberá as características semelhantes e estendemos
 
 .msg-error {
   @extend .msg;
-  border-color: #ff0000de;
-  color: #ff0000de;
+  border-color: #ff0000;
+  color: #ff0000;
 }
 
 .msg-alert {
   @extend .msg ;
-  border-color: #ff8e00de;
-  color: #ff8e00de;
+  border-color: #ff8e00;
+  color: #ff8e00;
 }
 ```
 
@@ -31,18 +31,19 @@ Será compilado para:
 
 ```
 .msg, .msg-error,  .msg-alert{
- border: 1px #f00;
- background-color: #fdd;
+ border: 1px solid;
+ padding: 4px;
+ text-align: center;
 }
 
 .msg-error {
- border-color: #ff0000de;
- color: #ff0000de;
+ border-color: #ff0000;
+ color: #ff0000;
 }
 
 .msg-alert {
- border-color: #ff8e00de;
- color: #ff8e00de;
+ border-color: #ff8e00;
+ color: #ff8e00;
 }
 ```
 
